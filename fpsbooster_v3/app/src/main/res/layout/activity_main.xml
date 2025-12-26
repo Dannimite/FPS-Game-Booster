@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:text="FPS Booster X"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCurrentGame"
+        android:text="Current Game: None"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvFPS"
+        android:text="Current FPS: --"
+        android:textColor="#00FF00"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <Button
+            android:id="@+id/btnBoostFPS"
+            android:text="Boost FPS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnCleanRAM"
+            android:text="Clean RAM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnOptimizeNetwork"
+            android:text="Optimize Network"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnPreLaunchBoost"
+            android:text="Pre-launch Boost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="#FFFFFF"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Profile: "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerProfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/profiles"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOverlayStatus"
+            android:text="FPS Overlay: On"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvPing"
+            android:text="Ping: -- ms"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

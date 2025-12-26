@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FPS Booster X</string>
+    <string-array name="profiles">
+        <item>High FPS</item>
+        <item>Balanced</item>
+        <item>Battery Saver</item>
+    </string-array>
+</resources>
